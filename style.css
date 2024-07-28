@@ -1,0 +1,23 @@
+:root{
+--primary: #fff;
+--secondary: #FBA504;
+--background: #6222CC;
+}
+body{
+    background-color: var(--background);
+}
+.bg-primary{
+    background-color: var(--primary);
+}
+.color-primary{
+    color: var(--primary);
+}
+.bg-secondary{
+    background-color: var(--secondary);
+}
+.color-secondary{
+    color: var(--secondary);
+}
+.btn{
+    border-radius: 5px;
+}

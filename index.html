@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Sky Devs</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="z-depth-0  bg-primary">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">
+        <img src="img/Sky-Devs-Logo-No-Bg.png" style="width: 50px; margin-top: 10px;">
+        
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="logged-in">
+            <a href="#" class="black-text modal-trigger" data-target="modal-account">Account</a>
+          </li>
+          <li class="logged-in">
+            <a href="#" class="black-text" id="logout">Logout</a>
+          </li>
+          <li class="logged-in">
+            <a href="#" class="black-text modal-trigger" data-target="modal-create">Create Guide</a>
+          </li>
+          <li class="logged-out">
+            <button style="padding:7px; border-radius: 20px; border: solid 2px #FBA504; background: none;"><a href="/login.html" class="black-text  " >Login</a></button>
+          </li>
+          <li class="logged-out">
+            <button style="margin-left: 10px; padding:9px; border-radius: 20px; border: none ; background-color: #FBA504;">
+            <a href="/index.html" class="black-text modal-trigger" data-target="modal-signup">Sign up</a>
+            </button>
+          </li>
+        </span>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- SIGN UP MODAL -->
+  <div id="modal-signup" style="margin-top: 50px;  border-radius: 10px; padding: 10px;" class="bg-primary container modal-trigger">
+    <div class="modal-content">
+      <h4 style="font-weight: 500;">Sign up</h4><br />
+      <form  id="signup-form">
+        <div  class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label  for="signup-password">Choose password</label>
+          <a  class="blue-text" href="./login.html">Already a user? Login Here!</a>
+        </div>
+        <button class="bg-secondary black-text btn z-depth-0">Sign up</button>
+        <button id="GoogleSignup" class="bg-secondary black-text btn z-depth-0">Signup With Google</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script type="module" src="config.js"></script>
+  <script type="module" src="App.js"></script>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
