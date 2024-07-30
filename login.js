@@ -13,7 +13,7 @@ loginForm.addEventListener('submit', (e)=>{
     // Signed in 
     const user = userCredential.user;
     console.log(user);
-    window.location = 'https://sky-devs.web.app/'
+    window.location = './Newsletter.html'
   })
   .catch((error) => {
     const errorCode = error.code;

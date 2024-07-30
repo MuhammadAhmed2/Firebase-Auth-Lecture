@@ -42,7 +42,7 @@ GoogleSignup.addEventListener("click", () => {
     .then((result) => {
       const user = result.user;
       console.log(user);
-      window.location = "https://sky-devs.web.app/";
+      window.location = "./Newsletter.html";
     })
     .catch((error) => {
       const errorMessage = error.message;
